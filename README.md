@@ -21,6 +21,7 @@ npm run deploy
     - On the laptop click join room
     - If smartphone either laptop disconnected, e.g. you refreshed browser page, need to do create-join process from scratch.
     - You can't just reconnect to the same room if one of the clients has been disconnected.
+    - After changes in code you could redeploy the app to see the changes and test it by command `npm run deploy`.
 3. Please go to https://www.youtube.com/watch?v=nU_IC_Xx46U and look the short video.
 
 ## Steps to reproduce:
