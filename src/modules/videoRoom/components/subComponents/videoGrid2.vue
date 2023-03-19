@@ -3,7 +3,7 @@
         <div class="flex justify-center items-center w-full" @click="onRemoteClick" v-show="!isLocalFullScreen"
             :class="{ 'h-screen': isRemoteFullScreen }" id="remoteContainer">
             <video id='remoteVideo' ref="remoteVideo" class="w-full" :class="remoteVideoClass" autoPlay playsInline
-                disablepictureinpicture />
+                disablepictureinpicture style="object-fit: fill;"  />
             <div class="fixed top-28 flex">
                 <img src="../../assets/images/pngs/camera-off.png" v-show="!remoteVideoEnabled" class="w-8"
                     :class="{ 'ml-5': !remoteAudioEnabled }" />
@@ -17,7 +17,7 @@
         <div class="flex justify-center items-center w-full" v-show="!isRemoteFullScreen"
             :class="{ 'h-screen': isLocalFullScreen }" @click="onLocalClick">
             <video id='localVideo' ref="localVideo" class="w-full" :class="localVideoClass" autoPlay playsInline
-                disablepictureinpicture />
+                disablepictureinpicture style="object-fit: fill;"/>
             <button @click="onLocalFullScreen" v-if="showLocalFullscreenButton" class="absolute p-2">
                 <img src="../../assets/images/pngs/exit-fullscreen3.png" width="40" v-if="isLocalFullScreen" />
                 <img src="../../assets/images/pngs/full-screen.png" width="40" v-else />
